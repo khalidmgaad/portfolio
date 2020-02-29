@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/fc95246875.js" crossorigin="anonymous"></script>
+	<title>KHALID MGAAD</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="iconTapped(document.querySelector('.app-icon'));">
+	
+	<header>
+		<div class="logo">
+			<a href="#" class="logo-title">MGAAD Khalid</a>
+		</div>
+		<div class="menu-toggler" onclick="toggleMenu();">
+			<i class="fas fa-bars"></i>
+		</div>
+		<nav>
+			<ul class="menu">
+				<li><a onclick="toggleMenu();" href="#apps">APPS</a></li>
+				<li><a onclick="toggleMenu();" href="#education">EDUCATION</a></li>
+				<li><a onclick="toggleMenu();" href="http://mgpluses.com/cv">CV</a></li>
+				<li><a onclick="toggleMenu();" href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="about-me">
+		
+		<div class="container">
+			<div class="text-content">
+				<p class="upper-title">Hi, I'm KHALID MGAAD</p>
+				<p class="title">IOS DEVELOPER</p>
+				<div class="separator"></div>
+				<p class="details">I'm 26 years old, self taught IOS developer, for the past 4 years I have been developing and publishing IOS apps and games on the AppStore, and also working on several projects for clients as a freelancer.</p>
+			</div>
+			<div class="ctas">
+				<button class="cta-btn get-cv-btn">GET CV</button>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section id="apps" class="apps">
+		<div class="section-header" >
+			<h5 class="title">APPLICATIONS:</h5>
+			<div class="app-icons">
+				<img id="sd" onclick="iconTapped(this);" src="https://is5-ssl.mzstatic.com/image/thumb/Purple123/v4/3c/d0/c1/3cd0c16e-08e5-97c3-a6ca-ecdddeddf509/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/150x150bb.png" alt="" class="app-icon">
+				<img id="ws" onclick="iconTapped(this);" src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/0c/01/e5/0c01e522-a399-2635-42e3-0d4f94ce63a6/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-P3-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/150x150bb.png" alt="" class="app-icon">
+				<img id="cc" onclick="iconTapped(this);" src="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/0b/d3/52/0bd35296-6e49-2914-b354-1d359bcb293e/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/150x150bb.png" alt="" class="app-icon">
+				<img id="sb" onclick="iconTapped(this);" src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/7e/6c/c9/7e6cc9b0-0d79-9a46-f392-638aa26d1019/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-9.png/150x150bb.png" alt="" class="app-icon">
+			</div>
+		</div>
+		<div class="arrow">
+			<img class="arrow-pointer" src="images/arrow.png" alt="">
+		</div>
+		<div class="app-showcase">
+
+			<div class="app-details">
+				<span class="app-details-title">App Name:</span>
+				<h5 class="app-title">SECRET DIARY</h5>
+				<span class="app-details-title">Description:</span>
+				<p class="app-description">Write daily diaries and add text, photos and voice memo to your entry. The app also have a mood tracker with monthly chart statistics, task planner and event reminder.</p>
+				<span class="app-details-title">Used Technologies:</span>
+				<p class="app-technologies">Swift, CocoaTouch, CoreData, Cloudkit, In-App Purchases, Push Notifications, Programmatic UI</p>
+			</div>
+			<div class="app-screenshots">
+				<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/89/0c/c2/890cc2cb-2621-1a09-e53f-c3cd1ffe76b5/pr_source.png/462x1000bb.png" alt="" class="screenshot">
+				<img src="https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/0a/16/eb/0a16eba3-ab3e-b209-648d-1e88936603ef/pr_source.png/462x1000bb.png" alt="" class="screenshot">
+				<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/2f/b0/80/2fb08066-7b4d-1604-13f9-bb6c93c4f7f2/pr_source.png/462x1000bb.png" alt="" class="screenshot">
+				<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/f6/55/1b/f6551b60-0c74-b442-588d-03fce397cc33/pr_source.png/462x1000bb.png" alt="" class="screenshot">
+			</div>
+		
+		</div>
+	</section>
+
+
+	<section class="tech-skills">
+		<p class="section-title">TECH & SKILLS</p>
+		<div class="icons">
+			<i class="icon fab fa-swift fa-3x"></i>
+			<i class="icon fab fa-html5 fa-3x"></i>
+			<i class="icon fab fa-css3 fa-3x"></i>
+			<i class="icon fab fa-js-square fa-3x"></i>
+			<i class="icon fab fa-react fa-3x"></i>
+			<i class="icon fab fa-github-square fa-3x"></i>
+		</div>
+	</section>
+
+	<section id="projects" class="my-projects">
+		<div class="text-content">
+			<div class="title">
+				<p class="upper-title">Other Projects</p>
+				<p class="title">IOS Games: </p>
+			</div>
+			<div class="separator"></div>
+			<p class="details">The following are IOS games that I developed from scratch with Swift using SpriteKit framework.</p>
+		</div>
+
+		<div class="projects">
+			<a href="https://www.chupamobile.com/ios-arcade/cannon-hero-must-die-10990" target="_blank">
+			<div class="project">				
+				<img src="https://www.chupamobile.com/media/catalog/product/c/a/cannon-hero-must-die-10990_image_10990.png" alt="">
+				<div class="project-details">
+					<p class="project-title">Canon Hero</p>
+					<p class="project-description">Click and hold to aim the canon and release when you see the the aim is right to shoot the enemie.</p>
+				</div>
+			</div>
+			</a>
+			<a href="https://www.chupamobile.com/ios-arcade/cannon-hero-must-die-10990" target="_blank">
+			<div class="project">				
+				<img src="https://www.chupamobile.com/media/catalog/product/t/h/the-four-swift-8183_image_8183.png" alt="">
+				<div class="project-details">
+					<p class="project-title">The Four</p>
+					<p class="project-description">Random generated calculation, you have to give the answer fast before countdown ends.</p>
+				</div>
+			</div>
+			</a>
+			<a href="https://www.chupamobile.com/ios-arcade/cannon-hero-must-die-10990" target="_blank">
+			<div class="project">
+				<img src="https://www.chupamobile.com/media/catalog/product/t/h/the-tower-8053_image_8053.png" alt="">
+				<div class="project-details">
+					<p class="project-title">The Tower</p>
+					<p class="project-description">The goal is to construct the tallest tower you can. Challenge your friends and see their scores thanks to Game Center leaderboard integrated in the game, and share your hight score using the sharing functionality included in the game.</p>
+				</div>
+			</div>
+			</a>
+		</div>
+	</section>
+	
+	<footer id="contact">
+		<div class="container">
+			<p class="upper-text">Have any project in mind? <span>Say Hello at:</span></p>
+			<p class="email" >khalid.mgaad@gmail.com</p>
+		</div>
+	</footer>
+	<script defer src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
