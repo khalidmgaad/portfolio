@@ -9,9 +9,14 @@
 </head>
 <body onload="iconTapped(document.querySelector('.app-icon'));">
 	
+	<div class="popup-message">
+		<p class="message-title" >This is the message title</p>
+		<p class="message-body" >Message content goes here</p>
+	</div>
+
 	<header>
 		<div class="logo">
-			<a href="#" class="logo-title">MGAAD Khalid</a>
+			<a class="logo-title">MGAAD Khalid</a>
 		</div>
 		<div class="menu-toggler" onclick="toggleMenu();">
 			<i class="fas fa-bars"></i>
@@ -19,8 +24,8 @@
 		<nav>
 			<ul class="menu">
 				<li><a onclick="toggleMenu();" href="#apps">APPS</a></li>
-				<li><a onclick="toggleMenu();" href="#education">EDUCATION</a></li>
-				<li><a onclick="toggleMenu();" href="http://mgpluses.com/cv">CV</a></li>
+				<li><a onclick="toggleMenu();" href="#projects">GAMES</a></li>
+				<li><a onclick="toggleMenu();" target="_blank" href="http://mgpluses.com/CV.pdf">CV</a></li>
 				<li><a onclick="toggleMenu();" href="#contact">CONTACT</a></li>
 			</ul>
 		</nav>
@@ -36,7 +41,9 @@
 				<p class="details">I'm 26 years old, self taught IOS developer, for the past 4 years I have been developing and publishing IOS apps and games on the AppStore, and also working on several projects for clients as a freelancer.</p>
 			</div>
 			<div class="ctas">
-				<button class="cta-btn get-cv-btn">GET CV</button>
+				<a target="_blank" href="http://mgpluses.com/CV.pdf">
+					<button class="cta-btn get-cv-btn">GET CV</button>
+				</a>
 			</div>
 
 		</div>
@@ -64,8 +71,10 @@
 				<h5 class="app-title">SECRET DIARY</h5>
 				<span class="app-details-title">Description:</span>
 				<p class="app-description">Write daily diaries and add text, photos and voice memo to your entry. The app also have a mood tracker with monthly chart statistics, task planner and event reminder.</p>
-				<span class="app-details-title">Used Technologies:</span>
+				<span class="app-details-title">Technologies:</span>
 				<p class="app-technologies">Swift, CocoaTouch, CoreData, Cloudkit, In-App Purchases, Push Notifications, Programmatic UI</p>
+				<br>
+				<a class="app-more-details cta-btn get-cv-btn" href="">More Details</a>
 			</div>
 			<div class="app-screenshots">
 				<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/89/0c/c2/890cc2cb-2621-1a09-e53f-c3cd1ffe76b5/pr_source.png/462x1000bb.png" alt="" class="screenshot">
@@ -81,15 +90,33 @@
 	<section class="tech-skills">
 		<p class="section-title">TECH & SKILLS</p>
 		<div class="icons">
-			<i class="icon fab fa-swift fa-3x"></i>
-			<i class="icon fab fa-html5 fa-3x"></i>
-			<i class="icon fab fa-css3 fa-3x"></i>
-			<i class="icon fab fa-js-square fa-3x"></i>
-			<i class="icon fab fa-react fa-3x"></i>
-			<i class="icon fab fa-github-square fa-3x"></i>
+			<div class="tech">
+				<i class="icon fab fa-swift fa-3x"></i>
+				<p class="icon-title">Swift</p>
+			</div>
+			<div class="tech">
+				<i class="icon fab fa-html5 fa-3x"></i>
+				<p class="icon-title">HTML5</p>
+			</div>
+			<div class="tech">
+				<i class="icon fab fa-css3 fa-3x"></i>
+				<p class="icon-title">CSS3</p>
+			</div>
+			<div class="tech">
+				<i class="icon fab fa-js-square fa-3x"></i>
+				<p class="icon-title">Javascript</p>
+			</div>
+			<div class="tech">
+				<i class="icon fab fa-react fa-3x"></i>
+				<p class="icon-title">ReactJS</p>
+			</div>
+			<div class="tech">
+				<i class="icon fab fa-github-square fa-3x"></i>
+				<p class="icon-title">Github</p>
+			</div>
 		</div>
 	</section>
-
+	
 	<section id="projects" class="my-projects">
 		<div class="text-content">
 			<div class="title">
@@ -132,11 +159,19 @@
 	</section>
 	
 	<footer id="contact">
-		<div class="container">
-			<p class="upper-text">Have any project in mind? <span>Say Hello at:</span></p>
-			<p class="email" >khalid.mgaad@gmail.com</p>
+		<section class="section-title">CONTACT ME:</section>
+		<div class="responce">
+			<i class="fas fa-check-circle fa-4x"></i>
+			<p>Thank you! Your message has been sent.</p>
 		</div>
+		<form class="container">
+				<input class="field" type="email" name="_replyto" placeholder="YOUR EMAIL">
+				<input class="field" name="subject" type="text" placeholder="SUBJECT">
+				<textarea class="field" name="message" id="" cols="30" rows="10" placeholder="YOUR MESSAGE"></textarea>
+				<input onclick="sendMessage(this);" class="cta-btn submit" type="button" value="Send">
+			</form>
 	</footer>
+	
 	<script defer src="script.js"></script>
 </body>
 </html>
